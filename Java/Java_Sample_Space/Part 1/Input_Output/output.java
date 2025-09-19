@@ -4,18 +4,22 @@ public class output {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        // Take name as input
+        // Input section
         System.out.print("Enter your name: ");
-        String name = sc.nextLine();
+        String name = sc.nextLine();   // read full line (name)
 
-        // Take age as input
         System.out.print("Enter your age: ");
-        int age = sc.nextInt();
+        int age = sc.nextInt();        // read age (number)
 
-        // Greet the user
-        System.out.println("Hello, " + name + "! You are " + age + " years old.");
-        System.out.println("Nice to meet you, " + name + "!");
+        // Output section
+        System.out.println("\n--- User Details ---");
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+
+        // Greeting
+        System.out.println("Hello " + name + "! You are " + age + " years old. Nice to meet you!");
 
         sc.close();
     }
 }
+
